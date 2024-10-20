@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagem Background</title>
     <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
         body {
             height: 100vh; /* 100% da Viewport Height */
             background-color: black;
@@ -12,22 +17,36 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; /* Para conteúdos verticais grandes*/
+            /*shorthand background
+            color > image > position > repeat > [size]Não funciona > attachment
+            exemplo (tem que incluir background-size): 
+            background: black url(imagens/wallpaper003.jpg) center center no-repeat fixed;
+            background-size: cover; */       
         }
 
         main {
             background-color: white;
-            max-width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 10px;
         }
 
+
+
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae atque, vero expedita minima sed eligendi incidunt exercitationem voluptates architecto provident aperiam hic sunt? Temporibus rem maiores facilis obcaecati maxime?</p>
