@@ -6,9 +6,10 @@
 }
 
 body, html {
-    width: 95vw;
+    width: 100vw;
     background-image: url(../imagens/fundo-madeira.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -17,14 +18,34 @@ main {
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     float: left;
+    width: calc(100% - 60px); /* largura do main é calculada com base na largura da tela e no tamanho do nav */
+    text-align: center; /* adicionei essa linha para centralizar a imagem */
+}
+
+div#iphone {
+    background-image: url(../imagens/frame-iphone.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div#tela {
+    background-color: rgb(255, 255, 0);
+    position: absolute;
+    top: 80px;
+    left: 22px;
+    width: 150px; /*267px; */
+    height: 150px; /* 471px; */
 }
 
 nav {
-    float: left;
+    float: right; /* adicionei essa linha para fazer o nav flutuar à direita */
+    width: 60px; /* largura do nav é fixa, mas pode ser ajustada */
 }
 
+
 nav > a {
-    margin: 20px;
+    margin: 10px;
     display: block;
 
 }
