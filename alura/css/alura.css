@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --largura: 15vw; /* 0.65*100vw/5 */
+    --altura: 12.5vw; /* 0.65*100vw/5 */
+    --margem: 0.4vw; /* 0.02*100vw/5  */
+}
+
+body {           
+    width: 100%; /* 1.272 */
+    height: 100%; /* 674  */
+    background-color: black;         
+}
+
+main {
+    position: relative;
+    background-color: white;
+    width: calc(6*var(--largura) + 5*var(--margem));
+    height: calc(4*var(--altura) + 3*var(--margem));
+    margin: auto;
+    margin-top: 1.2%;
+}
+
+#verde {
+    position: absolute;
+    width:var(--largura);
+    height: var(--altura);
+    background-color: #01c265;
+    color: #01c265;
+    bottom: 0px;
+    left: 0px;
+}
+
+#verde-1 {
+    position: absolute;
+    width:var(--largura);
+    height: var(--altura);
+    background-color: #01c265;
+    color: #01c265;
+    bottom: calc(3 * var(--altura) + 3 * var(--margem) );
+    left: calc(5 * var(--largura) + 5 * var(--margem));
+}
+
+#amarelo {
+    position: absolute;
+    width:var(--largura);
+    height: calc(2*var(--altura) + var(--margem));
+    background-color: #febb22;
+    color: #febb22;
+    bottom: 0px;
+    left: calc(var(--largura) + var(--margem));
+}
+
+#amarelo-1 {
+    position: absolute;
+    width: var(--largura);
+    height: calc(var(--altura) + var(--margem));
+    background-color: #febb22;
+    color: #febb22;
+    bottom: 0px;
+    left: calc(2 * var(--largura) + 2 * var(--margem));
+    bottom: calc(2 * var(--altura) + 1 * var(--margem)) ;
+}
+
+#amarelo-2 {
+    position: absolute;
+    width: calc(var(--largura) + var(--margem));
+    height: var(--altura);
+    background-color: #febb22;
+    color: #febb22;
+    bottom: 0px;
+    left: calc(2*var(--largura) + var(--margem));
+    bottom: calc(1 * var(--altura) + 1 * var(--margem));
+}
+
+#vermelho {
+    position: absolute;
+    width: var(--largura);
+    height: var(--altura);
+    background-color: #f45559;
+    color: #f45559;
+    bottom: calc(var(--altura) + var(--margem));
+    left: 0px;
+}
+
+#rosa-horizontal {
+    position: absolute;
+    width:calc(2 * var(--largura) + var(--margem));
+    height: var(--altura);
+    background-color: #f96ec1;
+    color: #f96ec1;
+    bottom: calc(2 * var(--altura) + 2 * var(--margem));
+    left: 0px;
+}
+
+#rosa {
+    position: absolute;
+    width: var(--largura);
+    height: var(--altura);
+    background-color: #f96ec1;
+    color: #f96ec1;
+    bottom: calc(3 * var(--altura) + 3 * var(--margem) );
+    left: 0px;
+}
+
+#rosa-1 {
+    position: absolute;
+    width: var(--largura);
+    height: var(--altura);
+    background-color: #f96ec1;
+    color: #f96ec1;
+    bottom: 0px;
+    left: calc(2 * var(--largura) + 2 * var(--margem));
+}
+
+#vermelho-horizontal {
+    position: absolute;
+    width:calc(2 * var(--largura) + 2 * var(--margem));
+    height: var(--altura);
+    background-color: #ff6265;
+    color: #ff6265;
+    bottom: calc(3 * var(--altura) + 3 * var(--margem));
+    left: calc(var(--largura) + var(--margem));
+}
+
+#limao-vertical {
+    position: absolute;
+    width:var(--largura);
+    height: calc(2*var(--altura));
+    background-color: #7fd522;
+    color: #7fd522;
+    bottom: 0px;
+    left: calc(3 * var(--largura) + 3 * var(--margem));
+}
+
+#vermelho-vertical {
+    position: absolute;
+    width:var(--largura);
+    height: calc(2*var(--altura) + 2 * var(--margem));
+    background-color: #ff6265;
+    color: #ff6265;
+    bottom: calc(2*var(--altura) + var(--margem));
+    left: calc(3 * var(--largura) + 3 * var(--margem));
+}
+
+#limao {
+    position: absolute;
+    width: calc(1 * var(--largura) + 1 * var(--margem));
+    height: var(--altura);
+    background-color: #7fd522;
+    color: #7fd522;
+    bottom: 0px;
+    left: calc(4 * var(--largura) + 3 * var(--margem));
+}
+
+#azul {
+    position: absolute;
+    width:var(--largura);
+    height: calc(3 * var(--altura) + 2 * var(--margem));
+    background-color: #0290e8;
+    color: #0290e8;
+    bottom: calc(var(--altura) + var(--margem));
+    left: calc(4 * var(--largura) + 4 * var(--margem));
+}
+
+#roxo {
+    position: absolute;
+    width:var(--largura);
+    height: calc(3 * var(--altura) + 2 * var(--margem));
+    background-color: #5d20f6;
+    color: #5d20f6;
+    bottom: 0px;
+    left: calc(5 * var(--largura) + 5 * var(--margem));
+}
