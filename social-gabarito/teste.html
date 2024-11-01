@@ -4,22 +4,131 @@
     <meta charset="UTF-8">
     <title>Caixas ao Lado</title>
     <style>
-        .caixa-grande {
-            width: 80%;
-            background-color: lightblue;
-            float: left;
-            height: 200px; /* Defina uma altura conforme necessário */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            min-height: 100vh;
+            width: 100vw;
+            background-color: black;
+            /* position: relative; */
+        }
+
+        p {
+            background-color: white;
+            width: 450px;
+            height: auto;
+            margin: 10px;
+            z-index: 2;            
+        }
+        
         .caixa-pequena {
-            width: 20%;
-            background-color: lightcoral;
-            float: left;
-            height: 200px; /* Defina uma altura conforme necessário */
+            height: 100px;
+            width: 80%;
+            background-color: rgba(255, 0, 0, 0.565);
+            color: white;
+            position: sticky;
+            bottom: 0px;
+            top: 0px;
+            left: 10%;  
+            /* z-index: 1;       */
+        }
+
+        .caixa-media {
+            height: 300px;
+            width: 300px;
+            background-color:rgb(0, 0, 255);
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            
+        }
+
+        .caixa-grande {
+            height: 450px;
+            width: 450px;
+            background-color: rgb(0, 128, 0);
+            color: white;
+            position: relative;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+   
+        }
+        #ultimo {
+            position: absolute;
+            right: 0px; 
         }
     </style>
 </head>
 <body>
-    <div class="caixa-grande">80% de Largura</div>
-    <div class="caixa-pequena">20% de Largura</div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?
+    </p>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?
+        
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?
+    </p>
+
+
+    <div class="caixa-pequena">PEQUENA</div>  
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?
+    </p>
+
+      
+    
+    <div class="caixa-grande">
+        GRANDE
+        <div class="caixa-media">
+            MÉDIA
+
+        </div>      
+    </div>
+       
+    
+    <!-- <p id="ultimo">
+        ULTIMO Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore praesentium facilis inventore autem, debitis reiciendis, amet distinctio beatae labore possimus nostrum. Sit explicabo, accusamus asperiores dolorem voluptatem animi voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis sunt quos assumenda officiis voluptatem, quasi obcaecati, voluptatum, labore vero officia cum esse ipsum eligendi accusamus similique. Fugiat, praesentium voluptatem?
+    </p> -->
+
 </body>
 </html>
