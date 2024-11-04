@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizado Grid</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            /* background-color: lightgrey; */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-rows: 200px 200px;
+
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .item {
+            background-color: aqua;
+            /* height: 100px; */
+            margin: 10px;
+            outline: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="item" id="verde">#verde</div>
+        <div class="item" id="amarelo">#amarelo</div>
+        <div class="item" id="amarelo-1">#amarelo-1</div>
+        <div class="item" id="amarelo-2">#amarelo-2</div>
+        <div class="item" id="vermelho">#vermelho</div>
+        <div class="item" id="rosa">#rosa</div>
+        <div class="item" id="rosa-1">#rosa-1</div>
+        <div class="item" id="rosa-horizontal">#rosa-horizontal</div>
+        <div class="item" id="vermelho-horizontal">#vermelho-horizontal</div>
+        <div class="item" id="vermelho-vertical">#vermelho-vertical</div>
+        <div class="item" id="limao-vertical">#limao-vertical</div>
+        <div class="item" id="limao">#limao</div>
+        <div class="item" id="azul">#azul</div>
+        <div class="item" id="roxo">#roxo</div>
+        <div class="item" id="verde-1">#verde-1</div>
+    </main>
+</body>
+
+</html>
