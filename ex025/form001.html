@@ -11,11 +11,64 @@
             font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
         }
+
+        input {
+            width: 50%;
+            height: 60px;
+            border: 8px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: lightblue;
+        }
+        label {
+            margin: 10px;
+            font-weight: bold;
+            background-color: lightcoral;
+        }
+        form {
+            margin: 10px;
+            background-color: lightgreen;
+        }
+        body {
+            background-color: lightpink;
+        }
     </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulario</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="GET">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <form action="cadastro.php" method="GET">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <form action="cadastro.php" method="GET">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <form action="cadastro.php" method="GET">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <form action="cadastro.php" method="GET">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
         <p><label for="isobrenome">Sobrenome:</label> 
