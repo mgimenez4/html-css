@@ -1,40 +1,60 @@
+html {
+    background-color: black;
+}
+
 body {
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px; /* Ajuste o espaço entre os retângulos */
-    height: 100vh;
-    margin: 0;
+    gap: 5px; /* Ajuste o espaço entre os retângulos */
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 30px;
+    grid-template-areas: "red red-2 blue blue"
+                         "red none blue blue"
+                         "non green yellow yellow"
+                         "blue-2 green purple purple";
 }
 
 .div1 {
     background-color: red;
-    grid-column: 1 / 3; /* Colando dois retângulos horizontalmente */
-    grid-row: 1 / 2;
+    grid-area: red;
+}
+
+.div1-2 {
+    background-color: red;
+    grid-area: red-2;
+    margin-left: -10px;
 }
 
 .div2 {
     background-color: blue;
-    grid-column: 3 / 5; /* Colando dois retângulos horizontalmente */
-    grid-row: 1 / 3; /* Colando dois retângulos verticalmente */
+    grid-area: blue;
+}
+
+.div2-1 {
+    background-color: blue;
+    grid-area: blue-2;
 }
 
 .div3 {
     background-color: green;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-area: green;
+    
 }
 
 .div4 {
     background-color: yellow;
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
+    grid-area: yellow;
+    
 }
 
 .div5 {
     background-color: purple;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-area: purple;
+    
 }
 
 /* Continue adicionando mais divs conforme necessário */
